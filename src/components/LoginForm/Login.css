@@ -1,0 +1,27 @@
+.loginpage {display: block;width: 100%;height: 100vh;position: relative;}
+.login-form {
+width: 100%;
+max-width: 410px;
+margin: 20px auto;
+background-color: #ffffff;
+padding: 30px;
+border-radius: 9px;
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.login-form .title {
+font-size: 21px;
+text-transform: uppercase;
+margin-bottom: 25px;
+margin-top: 5px;
+letter-spacing: 0.5px;
+word-spacing: 2px;
+}
+.login-form input {
+padding: 9px 15px;
+height: auto;
+font-size: 19px;
+margin-bottom: 24px !important;
+}

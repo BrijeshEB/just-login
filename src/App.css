@@ -1,4 +1,18 @@
-.App {
+body {
+background-color: red;
+background-image: linear-gradient(to right bottom, #1d6ee7, #0098ea, #00b2c0, #56c396, #b9cd8b);
+margin: 0px;
+box-sizing: border-box;
+}
+
+.main-content {
+width: calc(100% - 250px);
+padding: 10px;
+float: left;
+}
+  
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +49,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
