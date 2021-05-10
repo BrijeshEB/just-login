@@ -41,6 +41,9 @@ const Dashboard = () => {
                             </table>
                         </div>
                     </div>
+                    <div className="col-12 col-md-10 mt-3">
+                        <p>lorem ipsum dolor set amet. lorem ipsum dolor set set amet. lorem ipsum dolor set set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. lorem ipsum dolor set amet. </p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -11,6 +11,7 @@ const Header = () => {
   const Logout = () => {
     console.log('Logout!')
     localStorage.removeItem('validUser');
+    window.location = '';
     window.location.reload();
   }
   
