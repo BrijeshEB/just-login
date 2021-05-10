@@ -7,6 +7,13 @@ import './Header.css';
 import logo from './react-logo.svg';
 
 const Header = () => {
+
+  const Logout = () => {
+    console.log('Logout!')
+    localStorage.removeItem('validUser');
+    window.location.reload();
+  }
+  
   return (
       <div className="navbar-custom">
         <NavLink to='/' className="navbar-brand d-block text-white text- border-bottom m-0 p-3"><img src={logo} className="header-logo" alt="logo" />Awwards</NavLink>
@@ -14,7 +21,7 @@ const Header = () => {
           <NavLink exact className="nav-link" to="/" activeClassName="active_link">Dashboard</NavLink>
           <NavLink exact className="nav-link" to="/about" activeClassName="active_link">About</NavLink>
           <NavLink exact className="nav-link" to="/contact" activeClassName="active_link">Contact</NavLink>
-          {/* <NavLink className="nav-link" to="" onClick={Logout} activeClassName="active_link">Logout</NavLink> */}
+          <NavLink className="nav-link" to="" onClick={Logout} >Logout</NavLink>
         </div>
         {/* <Link to="/">Dashboard</Link>
         <Link to="/about">About</Link>

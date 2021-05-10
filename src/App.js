@@ -12,19 +12,19 @@ function App() {
     email: 'ab@eb.in',
     password: '12345'
   }
-  // debugger;
+  
   const [user, setUser] = useState({name: '',email:''});
   const [error, setError] = useState('');
 
   const Login = details => {
     console.log(details);
-
     if(details.email == adminUser.email && details.password == adminUser.password){
       console.log('Welcome!!');
       setUser({
         // name: details.name,
         email: details.mail
       })
+      localStorage.setItem('validUser', 'ok');
     }else{
       console.log('bbyy!!');
       setError('Details Did Not Match!')
@@ -32,14 +32,15 @@ function App() {
 
   }
 
- const Logout = () => {
-    console.log('Logout!')
-    setUser({name:'',email:''});
-  }
+//  const Logout = () => {
+//     console.log('Logout!')
+//     setUser({name:'',email:''});
+//   }
 
   return (
     <div className="App">
-      {(user.email !== "" ) ? (
+      {/* {(user.email !== "" ) ? ( */}
+      {( localStorage.getItem('validUser') == 'ok' ) ? (
         <div className="welcome">
         <Header/>
         <Switch>
