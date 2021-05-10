@@ -9,7 +9,7 @@ import Contact from './components/contact/Contact';
 
 function App() {
   const adminUser = {
-    email: 'anil@eb.in',
+    email: 'ab@eb.in',
     password: '12345'
   }
   // debugger;
@@ -20,20 +20,19 @@ function App() {
     console.log(details);
 
     if(details.email == adminUser.email && details.password == adminUser.password){
-      console.log('Aaa gaye!!');
+      console.log('Welcome!!');
       setUser({
-        name: details.name,
+        // name: details.name,
         email: details.mail
       })
     }else{
-      console.log('Bhag yayha se!!');
+      console.log('bbyy!!');
       setError('Details Did Not Match!')
-
     }
 
   }
 
-  const Logout = () => {
+ const Logout = () => {
     console.log('Logout!')
     setUser({name:'',email:''});
   }
@@ -44,7 +43,7 @@ function App() {
         <div className="welcome">
         <Header/>
         <Switch>
-          {/* <Route path='/login' component={Login} /> */}
+          <Route path='/login' component={Dashboard} />
           <Route exact path='/' component={Dashboard} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
